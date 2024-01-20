@@ -67,8 +67,7 @@ const PropertyCardBetter: React.FC<PropertyCardBetterProps> = ({
         href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
         crossorigin="anonymous"
-      />
-      <script src="https://cdn.tailwindcss.com"></script>
+      />{" "}
       <a
         href="#"
         className="relative inline-block w-full transform transition-transform duration-300 ease-in-out hover:-translate-y-2"
