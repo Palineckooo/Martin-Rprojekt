@@ -62,6 +62,13 @@ const PropertyCardBetter: React.FC<PropertyCardBetterProps> = ({
   }, [reservation]);
   return (
     <div className="relative mx-auto w-full">
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+        crossorigin="anonymous"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
       <a
         href="#"
         className="relative inline-block w-full transform transition-transform duration-300 ease-in-out hover:-translate-y-2"
@@ -111,7 +118,7 @@ const PropertyCardBetter: React.FC<PropertyCardBetterProps> = ({
 
             <p className="text-primary mt-2 inline-block whitespace-nowrap rounded-xl font-semibold leading-tight">
               <span className="text-sm uppercase"> EUR </span>
-              <span className="text-2xl">{data.price}</span>/Sqft
+              <span className="text-2xl">{data.price}</span>
             </p>
           </div>
           <div className="mt-4">
@@ -129,7 +136,10 @@ const PropertyCardBetter: React.FC<PropertyCardBetterProps> = ({
                 {data.bathroomCount}
               </p>
               <p className="flex items-center font-medium text-gray-800">
-                <i className="fa fa-home mr-2 text-blue-900"></i>
+                <i
+                  className="fa fa-home mr-2 text-blue-900"
+                  aria-hidden="true"
+                ></i>
                 2000 Sqft<sup>2</sup>
               </p>
             </div>
