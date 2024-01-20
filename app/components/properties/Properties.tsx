@@ -3,8 +3,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Pagination from "@mui/material/Pagination";
 import { Box, Stack, Typography } from "@mui/material";
-import PropertyCard from "../PropertyCard";
-import ListingCard from "../listings/ListingCard";
+
 import Container from "../Container";
 import Image from "next/image";
 import rent from "./rent.png";
