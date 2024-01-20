@@ -45,6 +45,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
               <>
                 <MenuItem onClick={rentModal.onOpen} label="Rent out" />
                 <MenuItem onClick={sellModal.onOpen} label="Sell out" />
+                <MenuItem onClick={sellModal.onOpen} label="Sell out" />
                 <MenuItem onClick={() => {}} label="My properties" />
 
                 <hr />
