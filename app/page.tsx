@@ -6,6 +6,7 @@ import getListings from "./actions/getListings";
 import getListingForSale from "./actions/getListingForSale";
 import getCurrentUser from "./actions/getCurentUser";
 import ClientsOnly from "./components/ClientsOnly";
+import Properties from "./components/properties/Properties";
 
 const Home = async () => {
   const listings = await getListings();
@@ -22,7 +23,13 @@ const Home = async () => {
 
   return (
     <ClientsOnly>
-      <Container>
+      {" "}
+      <Properties
+        currentUser={currentUser}
+        listingsForSale={listingsForSale}
+        listings={listings}
+      />
+      {/*}  <Container>
         <div
           className="
             pt-24
@@ -36,7 +43,7 @@ const Home = async () => {
             gap-8
           "
         >
-          {listings.map((listing: any) => (
+         {{listings.map((listing: any) => (
             <ListingCard
               currentUser={currentUser}
               key={listing.id}
@@ -51,7 +58,7 @@ const Home = async () => {
             />
           ))}
         </div>
-      </Container>
+          </Container>{*/}
     </ClientsOnly>
   );
 };
