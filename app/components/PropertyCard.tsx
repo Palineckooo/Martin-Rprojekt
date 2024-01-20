@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { Button, Stack, Typography } from "@mui/material";
 
 const PropertyCard = ({ property }) => {
@@ -47,3 +47,4 @@ const PropertyCard = ({ property }) => {
 };
 
 export default PropertyCard;
+*/
